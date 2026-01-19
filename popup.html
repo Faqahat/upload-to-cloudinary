@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Upload Zone -->
+    <div id="dropZone" class="drop-zone">
+      <div class="drop-zone-content">
+        <svg class="drop-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="17 8 12 3 7 8"></polyline>
+          <line x1="12" y1="3" x2="12" y2="15"></line>
+        </svg>
+        <span>Drop image or paste (Ctrl+V)</span>
+      </div>
+      <div class="drop-zone-hover">Drop to upload</div>
+      <div class="upload-progress" id="uploadProgress">
+        <div class="progress-bar"></div>
+        <span class="progress-text">Uploading...</span>
+      </div>
+    </div>
+
+    <!-- Header with search -->
+    <div class="header">
+      <h1>History</h1>
+      <div class="header-actions">
+        <button id="exportBtn" class="icon-btn" title="Export history">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </button>
+        <button id="clearAll" class="icon-btn" title="Clear all history">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- History list -->
+    <div id="historyList" class="history-list">
+      <div class="empty-state">No uploads yet</div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
