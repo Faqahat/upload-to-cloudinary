@@ -1,42 +1,40 @@
 {
-    "manifest_version": 3,
-    "name": "Upload to Cloudinary",
-    "version": "1.2.0",
-    "description": "Right-click any image to instantly upload to Cloudinary. Auto-copy URLs with optional transformations (resize, format, quality).",
-    "author": "Your Name",
-    "permissions": [
-        "contextMenus",
-        "storage",
-        "notifications",
-        "activeTab",
-        "offscreen",
-        "clipboardWrite"
-    ],
-    "host_permissions": [
-        "https://api.cloudinary.com/*"
-    ],
-    "background": {
-        "service_worker": "background.js"
+  "manifest_version": 3,
+  "name": "Upload to Cloudinary",
+  "version": "1.2.0",
+  "description": "Right-click any image to instantly upload to Cloudinary. Auto-copy URLs with optional transformations (resize, format, quality).",
+  "author": "faqahat",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "notifications",
+    "activeTab",
+    "offscreen",
+    "clipboardWrite"
+  ],
+  "host_permissions": ["https://api.cloudinary.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon_16x16.png",
+      "48": "icons/icon_48x48.png",
+      "128": "icons/icon_128x128.png"
     },
-    "action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "16": "icons/icon_16x16.png",
-            "48": "icons/icon_48x48.png",
-            "128": "icons/icon_128x128.png"
-        },
-        "default_title": "Upload History"
-    },
-    "options_page": "options.html",
-    "icons": {
-        "16": "icons/icon_16x16.png",
-        "48": "icons/icon_48x48.png",
-        "128": "icons/icon_128x128.png"
-    },
-    "web_accessible_resources": [
-        {
-            "resources": ["icons/*"],
-            "matches": ["<all_urls>"]
-        }
-    ]
+    "default_title": "Upload History"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/icon_16x16.png",
+    "48": "icons/icon_48x48.png",
+    "128": "icons/icon_128x128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
