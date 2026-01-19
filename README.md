@@ -169,13 +169,7 @@ See [PRIVACY_POLICY.md](PRIVACY_POLICY.md) for details.
 - The extension uses offscreen documents for reliable clipboard access
 - If issues persist, try reloading the extension
 
-## Development
 
-### Building for Chrome Web Store
-```bash
-# Create ZIP for submission
-zip -r cloudinary-upload.zip . -x "*.git*" "*.DS_Store" "*node_modules/*" "create_icons.js"
-```
 
 ## Support
 
